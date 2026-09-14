@@ -22,10 +22,10 @@ streamlit run app.py
 2. Calculate the production plan.
 3. Select slitters FX1-FX7.
 4. Review or manually adjust Master Roll allocation.
-5. Paste Master Roll SNs, one per line.
+5. Paste Master Roll SNs, one per line, and click Apply Master Rolls.
 6. Enter slitting date, team, and starting sequence.
 7. Review actual small roll quantities per Master Roll.
-8. Validate, preview, and download the MES Excel file.
+8. Click Generate, review validation and the eight-column Chinese preview, and download the MES Excel file.
 
 Downloaded Excel files are generated in the browser through Streamlit's download button. They are not automatically uploaded to MES.
 
@@ -48,12 +48,17 @@ python -m unittest discover -s tests
 
 ## Fixed Cloud URL
 
-Deployment target: Streamlit Community Cloud. Deployment is pending account login;
-no cloud URL has been created yet.
+Public application: https://martin-slitting-barcode.streamlit.app/
 
-1. Put the application source in a GitHub repository. Keep the repository private
-   unless source publication is intended; app visibility is a separate setting.
-   Exclude local environments, generated output, and secrets using `.gitignore`.
+Source repository: https://github.com/Martin-Ma-0104/slitting-barcode-assistant
+
+Hosted on Streamlit Community Cloud using Python 3.10 and the `main` branch.
+Application and source visibility are public, as requested by the owner.
+Updates to the hosted app must be committed to this repository; editing the local
+workspace alone does not update the cloud app.
+
+1. Keep application source in the repository above. Exclude local environments,
+   generated output, and secrets using `.gitignore`.
 2. Sign in at https://share.streamlit.io/ and connect that repository.
 3. Create an app using the repository's branch and `app.py` as the entrypoint.
    Choose Python 3.10 to match the locally tested runtime.
