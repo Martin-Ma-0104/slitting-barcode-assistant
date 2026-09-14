@@ -48,7 +48,7 @@ python -m unittest discover -s tests
 
 ## Fixed Cloud URL
 
-Public application: https://martin-slitting-barcode.streamlit.app/
+Public application: https://slitting-barcode.streamlit.app/
 
 Source repository: https://github.com/Martin-Ma-0104/slitting-barcode-assistant
 
